@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{04988773-07c3-4907-b1a4-8c1c8de34eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{53fbeb94-0c94-4e9e-8dbd-3c41af0b1bc7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test\kernel.cu">
+      <Filter>test</Filter>
+    </None>
+    <None Include="Src\cuda.cuh">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\cpu.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\pch.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\timer.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\base.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\cpu.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="Src\cuda.cu">
+      <Filter>Src</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
