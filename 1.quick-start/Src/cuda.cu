@@ -36,8 +36,8 @@ void GPU<T>::AllocateMemory()
 template<class T>
 void GPU<T>::HeavyCalc()
 {
-	dim3 block(128, 1, 1);
-	dim3 grid(128, 1, 1);
+	dim3 block(512, 1, 1);
+	dim3 grid(n / block.x, 1, 1);
 	host_to_device<<<grid, block, 0>>>(pDevSrc, pDevDst);
 }
 
