@@ -6,14 +6,12 @@ constexpr T ToSquare(T n) { return static_cast<T>(std::pow(2.f, n)); }
 
 int main()
 {
-    //note: https://http.download.nvidia.com/developer/cuda/jp/CUDA_Programming_Basics_PartI_jp.pdf
-    //note: https://http.download.nvidia.com/developer/cuda/jp/CUDA_Programming_Basics_PartII_jp.pdf
     //note: https://co-crea.jp/wp-content/uploads/2016/07/File_2.pdf
 
     /* ===== Init ===== */
 
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-    static const int n = ToSquare(12);
+    static const int n = ToSquare(16);
     float type;
     std::cout << typeid(type).name() << " : " << n << std::endl;
 
