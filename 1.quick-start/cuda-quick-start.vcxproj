@@ -41,6 +41,7 @@
     <ProjectGuid>{710bd9f6-6180-4f80-9881-0f8f335d2efc}</ProjectGuid>
     <RootNamespace>cudaquickstart</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>cuda-quick-start</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
